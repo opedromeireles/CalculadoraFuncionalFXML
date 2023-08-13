@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="454.0" style="-fx-background-color: #4B0082;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadoraController">
+   <children>
+      <Button layoutX="352.0" layoutY="293.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="+" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font></Button>
+      <Button fx:id="botao_divisao" layoutX="352.0" layoutY="193.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="÷" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="zerar" layoutX="352.0" layoutY="145.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="AC" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font></Button>
+      <Button fx:id="botao_multiplicacao" layoutX="352.0" layoutY="242.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="X" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font></Button>
+      <Button fx:id="botao_menos" layoutX="352.0" layoutY="343.0" mnemonicParsing="false" onAction="#subtracao" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="-" textFill="#ff00b2">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="botao9" layoutX="272.0" layoutY="193.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="9" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font></Button>
+      <Button fx:id="parentese_direito" layoutX="113.0" layoutY="145.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text=")" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font></Button>
+      <Button fx:id="porcentagem" layoutX="272.0" layoutY="145.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="\%" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font></Button>
+      <Button fx:id="botao6" layoutX="272.0" layoutY="242.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="6" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font></Button>
+      <Button fx:id="parentese_esquerdo" layoutX="30.0" layoutY="145.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="(" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font></Button>
+      <Button fx:id="botao3" layoutX="272.0" layoutY="293.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="3" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font></Button>
+      <Button fx:id="botao_igual" layoutX="272.0" layoutY="343.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="=" textFill="#ff00b2">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="botao8" layoutX="193.0" layoutY="193.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="8" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font></Button>
+      <Button fx:id="botao5" layoutX="193.0" layoutY="242.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="5" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font></Button>
+      <Button fx:id="botao2" layoutX="193.0" layoutY="293.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="2" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font></Button>
+      <Button fx:id="botao_ponto" layoutX="193.0" layoutY="343.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="." textFill="#ff00b2">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="botao7" layoutX="113.0" layoutY="193.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="7" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font>
+         <effect>
+            <Blend mode="DARKEN" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="W_RESIZE" />
+         </cursor></Button>
+      <Button fx:id="botao4" layoutX="113.0" layoutY="242.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="4" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font></Button>
+      <Button fx:id="botao1" layoutX="113.0" layoutY="293.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="1" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font></Button>
+      <Button fx:id="botao0" layoutX="30.0" layoutY="293.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: transparent;" textFill="#ff00b2">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <TextField layoutX="28.0" layoutY="22.0" prefHeight="93.0" prefWidth="397.0" />
+      <Button fx:id="ao_quadrado" layoutX="30.0" layoutY="193.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="x²" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="ao_cubo" layoutX="30.0" layoutY="242.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="x³" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="fatorial" layoutX="113.0" layoutY="343.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="x!" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="parentese_esquerdo1111" layoutX="30.0" layoutY="343.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: transparent;" textFill="#ff00b2" />
+      <ImageView fx:id="botao_pi" fitHeight="28.0" fitWidth="28.0" layoutX="48.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../icons/pi-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ToggleButton fx:id="toggle_on_off" layoutX="193.0" layoutY="145.0" mnemonicParsing="false" onAction="#ligar_desligar" prefHeight="43.0" prefWidth="73.0" style="-fx-cursor: hand; -fx-background-color: black;" text="ON/OFF" textFill="#ff00b2">
+         <font>
+            <Font name="Yu Gothic Light" size="12.0" />
+         </font>
+      </ToggleButton>
+      <ImageView fx:id="botao_pi1" fitHeight="28.0" fitWidth="49.0" layoutX="48.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@raiz.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
